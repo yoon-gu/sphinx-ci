@@ -32,14 +32,32 @@ LaTeX 설정 옵션 추가
 Sphinx를 이용한 LaTeX Build
 ----------------------------------
 
-`Makefile`이 존재하는 폴더에 가서 `make latexpdf`를 실행한 후, `pdf` 파일을 확인한다.
+`Makefile` 이 존재하는 폴더에 가서 `make latexpdf` 를 실행한 후, `pdf` 파일을 확인한다.
 
 
 LaTeX 예제
 ----------------------------------
 
+수식 예제
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. math::
 
    (a + b)^2  &=  (a + b)(a + b) \\
               &=  a^2 + 2ab + b^2 \\
   \int_a^b x^2 dx &= \frac{1}{3} \left(b^3 - a^3\right)
+
+Table 예제
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. list-table:: Title
+   :widths: 25 25 50
+   :header-rows: 1
+
+   * - Heading row 1, column 1
+     - Heading row 1, column 2
+     - Heading row 1, column 3
+   * - Row 1, column 1
+     -
+     - Row 1, column 3
+   * - Row 2, column 1
+     - Row 2, column 2
+     - Row 2, column 3

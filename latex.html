@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>3. 한글 LaTeX과 연동하기 &mdash; Sphinx-Tutorial  문서</title>
+  <title>2. 한글 LaTeX과 연동하기 &mdash; Sphinx-Tutorial  문서</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -42,11 +42,14 @@
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="doctest.html">1. 문서에 있는 코드 Snippet들을 자동 테스트</a></li>
-<li class="toctree-l1"><a class="reference internal" href="doctest.html#add-extention">2. Add Extention</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">3. 한글 LaTeX과 연동하기</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id1">3.1. LaTeX 설정 옵션 추가</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#sphinx-latex-build">3.2. Sphinx를 이용한 LaTeX Build</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id2">3.3. LaTeX 예제</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">2. 한글 LaTeX과 연동하기</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">2.1. LaTeX 설정 옵션 추가</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sphinx-latex-build">2.2. Sphinx를 이용한 LaTeX Build</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">2.3. LaTeX 예제</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id3">2.3.1. 수식 예제</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#table">2.3.2. Table 예제</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -65,7 +68,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
-      <li><span class="section-number">3. </span>한글 LaTeX과 연동하기</li>
+      <li><span class="section-number">2. </span>한글 LaTeX과 연동하기</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/latex.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -76,9 +79,9 @@
            <div itemprop="articleBody">
              
   <section id="latex">
-<h1><span class="section-number">3. </span>한글 LaTeX과 연동하기<a class="headerlink" href="#latex" title="이 제목에 대한 퍼머링크"></a></h1>
+<h1><span class="section-number">2. </span>한글 LaTeX과 연동하기<a class="headerlink" href="#latex" title="이 제목에 대한 퍼머링크"></a></h1>
 <section id="id1">
-<h2><span class="section-number">3.1. </span>LaTeX 설정 옵션 추가<a class="headerlink" href="#id1" title="이 제목에 대한 퍼머링크"></a></h2>
+<h2><span class="section-number">2.1. </span>LaTeX 설정 옵션 추가<a class="headerlink" href="#id1" title="이 제목에 대한 퍼머링크"></a></h2>
 <p><cite>conf.py</cite> 파일에 다음과 같이 extension을 추가한다.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">latex_engine</span> <span class="o">=</span> <span class="s1">&#39;xelatex&#39;</span>
 <span class="n">latex_elements</span> <span class="o">=</span> <span class="p">{</span>
@@ -107,15 +110,45 @@
 </ol>
 </section>
 <section id="sphinx-latex-build">
-<h2><span class="section-number">3.2. </span>Sphinx를 이용한 LaTeX Build<a class="headerlink" href="#sphinx-latex-build" title="이 제목에 대한 퍼머링크"></a></h2>
-<p><cite>Makefile`이 존재하는 폴더에 가서 `make latexpdf`를 실행한 후, `pdf</cite> 파일을 확인한다.</p>
+<h2><span class="section-number">2.2. </span>Sphinx를 이용한 LaTeX Build<a class="headerlink" href="#sphinx-latex-build" title="이 제목에 대한 퍼머링크"></a></h2>
+<p><cite>Makefile</cite> 이 존재하는 폴더에 가서 <cite>make latexpdf</cite> 를 실행한 후, <cite>pdf</cite> 파일을 확인한다.</p>
 </section>
 <section id="id2">
-<h2><span class="section-number">3.3. </span>LaTeX 예제<a class="headerlink" href="#id2" title="이 제목에 대한 퍼머링크"></a></h2>
+<h2><span class="section-number">2.3. </span>LaTeX 예제<a class="headerlink" href="#id2" title="이 제목에 대한 퍼머링크"></a></h2>
+<section id="id3">
+<h3><span class="section-number">2.3.1. </span>수식 예제<a class="headerlink" href="#id3" title="이 제목에 대한 퍼머링크"></a></h3>
 <div class="math notranslate nohighlight">
 \[\begin{split} (a + b)^2  &amp;=  (a + b)(a + b) \\
             &amp;=  a^2 + 2ab + b^2 \\
 \int_a^b x^2 dx &amp;= \frac{1}{3} \left(b^3 - a^3\right)\end{split}\]</div>
+</section>
+<section id="table">
+<h3><span class="section-number">2.3.2. </span>Table 예제<a class="headerlink" href="#table" title="이 제목에 대한 퍼머링크"></a></h3>
+<table class="colwidths-given docutils align-default" id="id4">
+<caption><span class="caption-text">Title</span><a class="headerlink" href="#id4" title="이 표에 대한 퍼머링크"></a></caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Heading row 1, column 1</p></th>
+<th class="head"><p>Heading row 1, column 2</p></th>
+<th class="head"><p>Heading row 1, column 3</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Row 1, column 1</p></td>
+<td></td>
+<td><p>Row 1, column 3</p></td>
+</tr>
+<tr class="row-odd"><td><p>Row 2, column 1</p></td>
+<td><p>Row 2, column 2</p></td>
+<td><p>Row 2, column 3</p></td>
+</tr>
+</tbody>
+</table>
+</section>
 </section>
 </section>
 
