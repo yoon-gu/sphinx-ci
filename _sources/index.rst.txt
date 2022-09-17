@@ -11,6 +11,7 @@ Welcome to Sphinx-Tutorial's documentation!
 :code:`RST` 문법을 알고 있으면 매우 유용합니다. HTML은 물론 LaTeX까지 다양하게 확장이 가능합니다.
 유용한 링크를 아래에 첨부합니다.
 
+#. https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html
 #. https://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html
 #. https://sublime-and-sphinx-guide.readthedocs.io/en/latest/index.html#work-with-rst-content
 
@@ -28,7 +29,7 @@ Welcome to Sphinx-Tutorial's documentation!
 
 
 Indices and tables
-==================
+------------------
 
 * :ref:`genindex`
 * :ref:`modindex`
