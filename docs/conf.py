@@ -31,3 +31,4 @@ extensions = [
 ]
 
 today_fmt = '%Y년 %B %d일'
+html_last_updated_fmt = '%Y년 %B %d일'
