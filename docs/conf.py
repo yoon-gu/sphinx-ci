@@ -35,8 +35,10 @@ html_last_updated_fmt = '%Y년 %B %d일'
 
 latex_engine = 'xelatex'
 latex_elements = {
+	'papersize':'a4paper',
     'fontpkg': r'''
 \setmainfont[Kerning=On,Mapping=tex-text]{나눔명조}
+\setsansfont[Kerning=On,Mapping=tex-text]{나눔명조}
 \setmonofont{JetBrains Mono}
 ''',
     'preamble': r'''
