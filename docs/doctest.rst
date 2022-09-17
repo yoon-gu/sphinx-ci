@@ -3,7 +3,7 @@
 
 Add Extention
 -------------
-`conf.py` 파일에 다음과 같이 extension을 추가한다.
+:file:`conf.py` 파일에 다음과 같이 extension을 추가한다.
 
 .. code-block:: python
 
