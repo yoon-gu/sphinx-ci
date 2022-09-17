@@ -3,6 +3,8 @@
 
 * 참조 링크 1: https://www.sphinx-doc.org/en/master/usage/extensions/doctest.html
 * 참조 링크 2: https://thomas-cokelaer.info/tutorials/sphinx/doctest.html
+* 참조 링크 3: https://docs.python.org/3/library/doctest.html
+   * :code:`doctest` 는 :index:`Python` 에서 기본으로 제공하는 기능이라 Sphinx에 많은 정보가 있지 않으므로, 이 링크를 참고한다.
 
 Add Extention
 -------------
