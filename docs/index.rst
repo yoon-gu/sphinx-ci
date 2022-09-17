@@ -6,6 +6,8 @@
 Welcome to Sphinx-Tutorial's documentation!
 ===========================================
 
+안녕하세요. 많은 기능이 있는 Sphinx에 대해 "저"를 위해 작성한 문서입니다.
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
