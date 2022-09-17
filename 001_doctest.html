@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>1. Get Started &mdash; Sphinx-Tutorial  문서</title>
+  <title>1. 문서에 있는 코드 Snippet들을 자동 테스트 &mdash; Sphinx-Tutorial  문서</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -40,9 +40,9 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">1. Get Started</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#installation">1.1. Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#test-code">1.2. Test Code</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">1. 문서에 있는 코드 Snippet들을 자동 테스트</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#add-extention">2. Add Extention</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#test-code">2.1. Test Code</a></li>
 </ul>
 </li>
 </ul>
@@ -61,7 +61,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
-      <li><span class="section-number">1. </span>Get Started</li>
+      <li><span class="section-number">1. </span>문서에 있는 코드 Snippet들을 자동 테스트</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/001_doctest.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -71,17 +71,19 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="get-started">
-<h1><span class="section-number">1. </span>Get Started<a class="headerlink" href="#get-started" title="이 제목에 대한 퍼머링크"></a></h1>
-<section id="installation">
-<h2><span class="section-number">1.1. </span>Installation<a class="headerlink" href="#installation" title="이 제목에 대한 퍼머링크"></a></h2>
-<ul class="simple">
-<li><p>Run <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">git+https://github.com/yoon-gu/Mozart.git</span></code></p></li>
-</ul>
+  <section id="snippet">
+<h1><span class="section-number">1. </span>문서에 있는 코드 Snippet들을 자동 테스트<a class="headerlink" href="#snippet" title="이 제목에 대한 퍼머링크"></a></h1>
 </section>
+<section id="add-extention">
+<h1><span class="section-number">2. </span>Add Extention<a class="headerlink" href="#add-extention" title="이 제목에 대한 퍼머링크"></a></h1>
+<p><cite>conf.py</cite> 파일에 다음과 같이 extension을 추가한다.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sphinx.ext.doctest&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
 <section id="test-code">
-<h2><span class="section-number">1.2. </span>Test Code<a class="headerlink" href="#test-code" title="이 제목에 대한 퍼머링크"></a></h2>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mozart</span> <span class="k">as</span> <span class="nn">mz</span>
+<h2><span class="section-number">2.1. </span>Test Code<a class="headerlink" href="#test-code" title="이 제목에 대한 퍼머링크"></a></h2>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span>         <span class="c1"># this will give no output!</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">2</span><span class="o">+</span><span class="mi">2</span><span class="p">)</span>  <span class="c1"># this will give output</span>
 </pre></div>
 </div>
 </section>
