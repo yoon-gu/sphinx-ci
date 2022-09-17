@@ -27,6 +27,7 @@ Welcome to Sphinx-Tutorial's documentation!
    doctest
    latex
    exec_code
+   sphinx_gallery
 
 
 Indices and tables
