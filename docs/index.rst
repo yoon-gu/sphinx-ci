@@ -17,7 +17,7 @@ Welcome to Sphinx-Tutorial's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   001_doctest
+   doctest
 
 
 Indices and tables
