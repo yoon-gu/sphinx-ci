@@ -1,9 +1,9 @@
 한글 LaTeX과 연동하기
 =================================================================
 
-LaTeX 설정 옵션 추가
+:index:`LaTeX` 설정 옵션 추가
 ----------------------------------
-`conf.py` 파일에 다음과 같이 extension을 추가한다.
+:file:`conf.py` 파일에 다음과 같이 extension을 추가한다.
 
 .. code-block:: python
 
@@ -21,18 +21,18 @@ LaTeX 설정 옵션 추가
    }
    latex_show_urls = 'footnote'
 
-#. `latex_engine`: LaTeX에서 사용할 엔진, 한글을 위해서는 `xelatex` 으로 변경
-#. `latex_elements`: LaTeX 관련 옵션을 저장하는 `Dictionary`.
+#. :code:`latex_engine`: LaTeX에서 사용할 엔진, 한글을 위해서는 :code:`xelatex` 으로 변경
+#. :code:`latex_elements`: LaTeX 관련 옵션을 저장하는 :code:`Dictionary`.
 
-   * `papersize`: 종이사이즈, `a4paper` 와 `letter` 가 있다.
-   * `fontpkg`: 원하는 폰트를 넣을 수 있다.
-   * `preamble`: 추가적으로 사용할 LaTeX 패키지를 추가한다.
+   * :code:`papersize`: 종이사이즈, :code:`a4paper` 와 :code:`letter` 가 있다.
+   * :code:`fontpkg`: 원하는 폰트를 넣을 수 있다.
+   * :code:`preamble`: 추가적으로 사용할 LaTeX 패키지를 추가한다.
 
 
 Sphinx를 이용한 LaTeX Build
 ----------------------------------
 
-`Makefile` 이 존재하는 폴더에 가서 `make latexpdf` 를 실행한 후, `pdf` 파일을 확인한다.
+:code:`Makefile` 이 존재하는 폴더에 가서 :code:`$ make latexpdf` 를 실행한 후, :code:`pdf` 파일을 확인한다.
 
 
 LaTeX 예제

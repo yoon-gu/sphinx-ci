@@ -82,8 +82,8 @@
   <section id="latex">
 <h1><span class="section-number">2. </span>한글 LaTeX과 연동하기<a class="headerlink" href="#latex" title="이 제목에 대한 퍼머링크"></a></h1>
 <section id="id1">
-<h2><span class="section-number">2.1. </span>LaTeX 설정 옵션 추가<a class="headerlink" href="#id1" title="이 제목에 대한 퍼머링크"></a></h2>
-<p><cite>conf.py</cite> 파일에 다음과 같이 extension을 추가한다.</p>
+<h2><span class="section-number">2.1. </span><span class="target" id="index-0"></span>LaTeX 설정 옵션 추가<a class="headerlink" href="#id1" title="이 제목에 대한 퍼머링크"></a></h2>
+<p><code class="file docutils literal notranslate"><span class="pre">conf.py</span></code> 파일에 다음과 같이 extension을 추가한다.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">latex_engine</span> <span class="o">=</span> <span class="s1">&#39;xelatex&#39;</span>
 <span class="n">latex_elements</span> <span class="o">=</span> <span class="p">{</span>
    <span class="s1">&#39;papersize&#39;</span><span class="p">:</span><span class="s1">&#39;a4paper&#39;</span><span class="p">,</span>
@@ -100,19 +100,19 @@
 </pre></div>
 </div>
 <ol class="arabic simple">
-<li><p><cite>latex_engine</cite>: LaTeX에서 사용할 엔진, 한글을 위해서는 <cite>xelatex</cite> 으로 변경</p></li>
-<li><p><cite>latex_elements</cite>: LaTeX 관련 옵션을 저장하는 <cite>Dictionary</cite>.</p>
+<li><p><code class="code docutils literal notranslate"><span class="pre">latex_engine</span></code>: LaTeX에서 사용할 엔진, 한글을 위해서는 <code class="code docutils literal notranslate"><span class="pre">xelatex</span></code> 으로 변경</p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">latex_elements</span></code>: LaTeX 관련 옵션을 저장하는 <code class="code docutils literal notranslate"><span class="pre">Dictionary</span></code>.</p>
 <ul class="simple">
-<li><p><cite>papersize</cite>: 종이사이즈, <cite>a4paper</cite> 와 <cite>letter</cite> 가 있다.</p></li>
-<li><p><cite>fontpkg</cite>: 원하는 폰트를 넣을 수 있다.</p></li>
-<li><p><cite>preamble</cite>: 추가적으로 사용할 LaTeX 패키지를 추가한다.</p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">papersize</span></code>: 종이사이즈, <code class="code docutils literal notranslate"><span class="pre">a4paper</span></code> 와 <code class="code docutils literal notranslate"><span class="pre">letter</span></code> 가 있다.</p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">fontpkg</span></code>: 원하는 폰트를 넣을 수 있다.</p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">preamble</span></code>: 추가적으로 사용할 LaTeX 패키지를 추가한다.</p></li>
 </ul>
 </li>
 </ol>
 </section>
 <section id="sphinx-latex-build">
 <h2><span class="section-number">2.2. </span>Sphinx를 이용한 LaTeX Build<a class="headerlink" href="#sphinx-latex-build" title="이 제목에 대한 퍼머링크"></a></h2>
-<p><cite>Makefile</cite> 이 존재하는 폴더에 가서 <cite>make latexpdf</cite> 를 실행한 후, <cite>pdf</cite> 파일을 확인한다.</p>
+<p><code class="code docutils literal notranslate"><span class="pre">Makefile</span></code> 이 존재하는 폴더에 가서 <code class="code docutils literal notranslate"><span class="pre">$</span> <span class="pre">make</span> <span class="pre">latexpdf</span></code> 를 실행한 후, <code class="code docutils literal notranslate"><span class="pre">pdf</span></code> 파일을 확인한다.</p>
 </section>
 <section id="id2">
 <h2><span class="section-number">2.3. </span>LaTeX 예제<a class="headerlink" href="#id2" title="이 제목에 대한 퍼머링크"></a></h2>
