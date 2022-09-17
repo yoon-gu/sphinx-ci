@@ -43,3 +43,4 @@ latex_elements = {
 \usepackage{kotex}
 '''
 }
+latex_show_urls = 'footnote'
