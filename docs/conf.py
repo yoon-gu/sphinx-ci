@@ -13,12 +13,17 @@ author = '황윤구'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = []
+extensions = [
+    'sphinx.ext.doctest',
+    'sphinx_exec_code',
+]
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 language = 'ko'
+
+today_fmt = '%Y년 %B %d일'
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
@@ -26,14 +31,9 @@ language = 'ko'
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
 
-extensions = [
-    'sphinx.ext.doctest',
-    'sphinx_exec_code',
-]
-
-today_fmt = '%Y년 %B %d일'
 html_last_updated_fmt = '%Y년 %B %d일'
 
+# -- LaTeX configuration ---------------------------------------------------
 latex_engine = 'xelatex'
 latex_elements = {
 	'papersize':'a4paper',
