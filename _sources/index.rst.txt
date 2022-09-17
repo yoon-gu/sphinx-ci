@@ -14,10 +14,11 @@ Welcome to Sphinx-Tutorial's documentation!
 
 .. toctree::
    :numbered:
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Contents:
 
    doctest
+   latex
 
 
 Indices and tables
