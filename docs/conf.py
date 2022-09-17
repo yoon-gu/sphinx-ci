@@ -29,3 +29,5 @@ html_static_path = ['_static']
 extensions = [
     'sphinx.ext.doctest',
 ]
+
+today_fmt = '%Y년 %B %d일'

@@ -6,7 +6,11 @@
 Welcome to Sphinx-Tutorial's documentation!
 ===========================================
 
-안녕하세요. 많은 기능이 있는 Sphinx에 대해 "저"를 위해 작성한 문서입니다.
+안녕하세요. 많은 기능이 있는 Sphinx에 대해 **저를 위해** 작성한 문서 [#f1]_ 입니다.
+
+.. rubric:: Footnotes
+
+.. [#f1] 마지막 업데이트 날짜는 |today| 입니다.
 
 .. toctree::
    :numbered:
